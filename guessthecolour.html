@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Guess the Colour</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="main.css">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+		<script src="guessthecolour.js" defer></script>
+	</head>
+	
+	<body>
+	
+		<div class="header">
+			<a href="index.html"><h1>Challenger</h1></a>
+		</div>
+		
+		<div class="challenge-title">
+			<h1>Guess the Colour</h1>
+			<h2>Your challenge: guess the RGB values of the coloured square!</h2>
+		</div>
+	
+		<div class="game-container">
+			<canvas id="colour-square" width="100" height="100"></canvas>
+			<h3 id="result"></h3>
+			<p id="red-accuracy"></p>
+			<p id="green-accuracy"></p>
+			<p id="blue-accuracy"></p>
+			<h3 id="score"></h3>
+			<form id="colour-input">
+				<label for="red">Red:</label><br>
+				<input type="number" id="red" name="red"><br>
+				<label for="green">Green:</label><br>
+				<input type="number" id="green" name="green"><br>
+				<label for="blue">Blue:</label><br>
+				<input type="number" id="blue" name="blue"><br>
+			</form>
+			<button id="start-button">Start</button>
+			<button id="submit">Submit</button>
+			<h1 class="high-score" id="high-score"></h1>
+		</div>
+	</body>
+	
+</html>
